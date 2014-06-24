@@ -92,7 +92,7 @@ function main() {
 
   function forwardCurrentCommandToCordova() {
     // TODO: Can we replace use of CLI here?  Calls to cordova-lib cordova.raw?
-    require('cordova/src/cli')(process.argv);
+    require('cordova-tmp4cca/src/cli')(process.argv);
   }
 
   function printVersionThenPrePrePrepareThenForwardCommandToCordova() {
@@ -188,7 +188,7 @@ function main() {
 
   // TODO(mmocny): The following few lines seem to make global changes that affect all other subcommands.
   // May want to break this out to a module as an "init" step that every other step ensures has been called.
-  var cordovaLib = require('cordova-lib');
+  var cordovaLib = require('cordova-lib-tmp4cca');
   cordovaLib.cordova.config.setAutoPersist(false);
   var projectRoot = cordovaLib.cordova.findProjectRoot();
   if (projectRoot) {

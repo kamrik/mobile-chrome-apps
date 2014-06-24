@@ -17,7 +17,7 @@
   under the License.
  */
 
-var cordova = require('cordova-lib').cordova;
+var cordova = require('cordova-lib-tmp4cca').cordova;
 var Q = require('q');
 
 // Returns the promise from the raw Cordova command.

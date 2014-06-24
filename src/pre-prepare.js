@@ -94,7 +94,7 @@ module.exports = exports = function prePrepareCommand() {
     // This is necessary for chrome.identity to redirect back to the app after authentication.
     var hasIos = fs.existsSync(path.join('platforms', 'ios'));
     if (hasIos) {
-      var platforms = require('cordova-lib').cordova_platforms;
+      var platforms = require('cordova-lib-tmp4cca').cordova_platforms;
       var parser = new platforms.ios.parser(path.join('platforms','ios'));
       var infoPlistPath = path.join('platforms', 'ios', parser.originalName, parser.originalName + '-Info.plist');
       var infoPlistXml = et.parse(fs.readFileSync(infoPlistPath, 'utf-8'));
@@ -128,7 +128,7 @@ module.exports = exports = function prePrepareCommand() {
   })
   .then(function() {
     // Update installed plugins
-    return require('cordova-lib/src/cordova/plugin')('ls');
+    return require('cordova-lib-tmp4cca/src/cordova/plugin')('ls');
   })
   .then(function(installedPlugins) {
     var missingPlugins = pluginsToBeInstalled.filter(function(p) {
@@ -151,7 +151,7 @@ module.exports = exports = function prePrepareCommand() {
     }
   })
   .then(function() {
-    return require('cordova-lib/src/cordova/plugin')('ls');
+    return require('cordova-lib-tmp4cca/src/cordova/plugin')('ls');
   })
   .then(function(installedPlugins) {
     // If chrome.identity is installed, we need a client id.
