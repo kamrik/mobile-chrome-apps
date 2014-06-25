@@ -1,10 +1,11 @@
 {
   "name": "cca",
-  "version": "0.1.1-rc1",
+  "version": "0.1.1-rc4",
   "dependencies": {
     "chrome-app-developer-tool-client": {
-      "version": "0.0.1",
-      "from": "chrome-app-developer-tool-client@^0.0.1",
+      "version": "0.0.2",
+      "from": "chrome-app-developer-tool-client@^0.0.2",
+      "resolved": "https://registry.npmjs.org/chrome-app-developer-tool-client/-/chrome-app-developer-tool-client-0.0.2.tgz",
       "dependencies": {
         "agentkeepalive": {
           "version": "0.2.2",

@@ -1,7 +1,7 @@
 {
   "name": "cca",
   "author": "The Chrome Team",
-  "version": "0.1.1-rc1",
+  "version": "0.1.1-rc4",
   "description": "Run Chrome Apps on mobile using Apache Cordova",
   "preferGlobal": "true",
   "keywords": [
@@ -21,7 +21,7 @@
     "url": "https://github.com/MobileChromeApps/mobile-chrome-apps.git"
   },
   "dependencies": {
-    "chrome-app-developer-tool-client": "^0.0.1",
+    "chrome-app-developer-tool-client": "^0.0.2",
     "cordova-tmp4cca": "latest",
     "cordova-lib-tmp4cca": "latest",
     "crypto-js": "^3.1.2-3",
